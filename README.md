@@ -20,4 +20,5 @@ The use of streamlit platform allows for convenient adjustment of inference conf
 
 The YOLOv8 models used within this package have been pre-trained separately. The training used pre-trained YOLOv8n models.
 
-## Please refer to the README within `train` or `streamlit` folder for more details on training or web deployment.
+## Getting started
+Please refer to the README within `train` or `streamlit` folder for more details on training or web deployment.

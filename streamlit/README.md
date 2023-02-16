@@ -52,7 +52,7 @@ This will open a browser window where you can upload an image. The app will then
 ### Getting started via Google Colab
 
 To get started, you need to open the `streamlit_on_colab.ipynb` file on Google Colab and run it..
-The file can be found at `xx`.
+The file can be found at [https://github.com/garyfoohw/ULD_locks_detection/blob/master/streamlit/streamlit_on_colab.ipynb](https://github.com/garyfoohw/ULD_locks_detection/blob/master/streamlit/streamlit_on_colab.ipynb).
 
 Within the notebook, you will find instruction needed to set up the Github SSH key. Pls follow instruction within the file.
 
