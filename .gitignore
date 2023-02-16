@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+cli.log/
+__pycache__/
+runs/
+data/
+venv/
+crops/
