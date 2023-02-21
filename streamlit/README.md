@@ -69,19 +69,19 @@ This project is designed for the detection of raised locks with ULD and may not 
 ## Technical details of program flow
 
 ```
-          Object     ┌────────────────────────┐
-          Detection  │ Stage 1 (Detect ULD)   ├─────────────────────────┐
-          ┌─────────►│ YOLOv8                 │                         ▼
-          │          │ Obj Detection          │                      ┌────────────────┐
-          │          └────────────────────────┘                      │  Stage 2       │  ┌─────────┐
-┌─────────┴─┐                                                        │  YOLOv8        ├─►│ Output  │
-│ Raw Image │                                                        │  Obj Detection │  └─────────┘
-└─────────┬─┘                                                        └────────────────┘
-          │          ┌────────────────────────┐     ┌────────────┐      ▲
-          │          │ Stage 1 (Detect ULD)   │     │ Background │      │
-          └─────────►│ YOLOv8                 ├────►│ Removal    ├──────┘
-          Instance   │ Instance Segmentation  │     │            │
-          Segmentatio└────────────────────────┘     └────────────┘
+          Object      ┌────────────────────────┐
+          Detection   │ Stage 1 (Detect ULD)   ├─────────────────────────┐
+          ┌──────────►│ YOLOv8                 │                         ▼
+          │           │ Obj Detection          │                       ┌────────────────┐
+          │           └────────────────────────┘                       │  Stage 2       │  ┌───────────────┐
+┌─────────┴─┐                                                          │  YOLOv8        ├─►│ Output Image  │
+│ Raw Image │                                                          │  Obj Detection │  └───────────────┘
+└─────────┬─┘                                                          └────────────────┘
+          │           ┌────────────────────────┐     ┌────────────┐      ▲
+          │           │ Stage 1 (Detect ULD)   │     │ Background │      │
+          └──────────►│ YOLOv8                 ├────►│ Removal    ├──────┘
+          Instance    │ Instance Segmentation  │     │            │
+          Segmentation└────────────────────────┘     └────────────┘
 ```
 
 ## Adapted from
