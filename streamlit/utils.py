@@ -29,8 +29,12 @@ def check_folders():
         print(f'Folder {notExist} does not exist. We will create it!')
         # Create a new directory because it does not exist
         for folder in notExist:
-            os.makedirs(folder)
-            print(f"The new directory {folder} is created!")
+            # to prevent errors raised sometimes it call this function multiple times.
+            try:
+                os.makedirs(folder)
+                print(f"The new directory {folder} is created!")
+            except:
+                pass
     
 def count_locks_detected(path):
     try:

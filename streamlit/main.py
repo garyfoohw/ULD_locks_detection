@@ -4,6 +4,7 @@
 import os, time
 import streamlit as st
 from ultralytics import YOLO
+from ultralytics.yolo.utils import set_settings
 from PIL import Image
 from inference_param import param_uld, param_locks
 from vars import task_types, hide_streamlit_style, page_title,stream_lit_app_title, blink_css
@@ -11,6 +12,10 @@ from utils import check_folders, count_locks_detected, remove_background, get_st
 
 # This will check if we have all the folders to save our files for inference
 check_folders()
+
+# This will set the runs directory where yolo stage 1 exports the file to.
+# This step is requried because yolo sometime uses the wrong path based on previous installations.
+set_settings(kwargs={'runs_dir':os.path.join(os.getcwd(),'runs')})
 
 if __name__ == '__main__':
 
