@@ -49,4 +49,9 @@ The repository is split into 2 folders. 1 for the training algorithm 1 for the d
 -   To look at the training algorithm, refer to **train** folder.
 -   To look at web deployment, refer to **streamlit** folder
 
-Please refer to the README within `train` or `streamlit` folder for more details on training or web deployment.
+Please refer to the README within `train` or `streamlit` folder for deeper details on training or web deployment.
+There will be a separate README within the folders.
+
+## A word of caution
+
+As the training and inference algorithm relies heavily on Ultralytics' YOLOv8 library, there may be breaking changes from time to time. Do revert to v8.0.29 if something breaks.
