@@ -22,7 +22,7 @@ The YOLOv8 models used within this package have been pre-trained separately. The
 
 ## Static demonstration
 
-1. Here we demonstrate using Object Detection in Stage 1 to locate the 2 raised locks. The output shows the 2 locks detected in the bounding boxes drawn.
+1. Here we demonstrate using <ins>Object Detection</ins> in Stage 1 to locate the 2 raised locks. The output shows the 2 locks detected in the bounding boxes drawn.
 
 **Raw Image**<br>
 ![#1 Raw Image](https://user-images.githubusercontent.com/86142858/220334321-8b44ae00-b8cc-4a4a-8b43-a58c18606b2c.jpg)
@@ -30,7 +30,7 @@ The YOLOv8 models used within this package have been pre-trained separately. The
 **Processed Output**<br>
 ![#1 Processed Output](https://user-images.githubusercontent.com/86142858/220334804-57dda9e1-5087-498d-8b10-3667c69a47d4.png)
 
-1. Next we demonstrate using Instance Segmentation in Stage 1 to locate locks. There isn't any raised locks in this sample, so the algorithm detects none, and output an error in red.
+2. Next we demonstrate using <ins>Instance Segmentation</ins> in Stage 1 to locate locks. There isn't any raised locks in this sample, so the algorithm detects none, and output an error in red.
 
 **Raw Image**<br>
 ![#2 Raw Image](https://user-images.githubusercontent.com/86142858/220335210-1211f3c4-8868-43f7-9cbb-06b41fe9053b.png)
