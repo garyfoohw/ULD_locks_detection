@@ -84,6 +84,8 @@ This project is designed for the detection of raised locks with ULD and may not 
           Segmentation└────────────────────────┘     └────────────┘
 ```
 
+<sup><sup>Created with [ASCIIFlow](https://asciiflow.com/)</sub></sup>
+
 ## Adapted from
 
 https://github.com/josebenitezg/yolov8-streamlit-app
