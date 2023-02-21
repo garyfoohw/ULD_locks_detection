@@ -2,10 +2,12 @@
   <h1>ULD Locks Detection</h1>
 </div>
 
-## Training the model
+## First things
 
 There is only one way to operate this notebook - via Google Colab.
-The notebook is designed to mount to Google Drive to upload trained models.
+The notebook is designed to mount to Google Drive to upload trained model files when training is complete.
+
+You will also need a Roboflow account and your account's API KEY.
 
 ## Dependencies
 
@@ -47,7 +49,3 @@ Select a file that says `xxx_yyy_zzz_infer` and open it in Google Colab
 When the inference is done, the following item will be stored to **Google Drive/ULD/**.
 
 -   Zip file of inference output (Crops/Original image with Bounding boxes/Labels)
-
-## Technical details on the implementation
-
-### The a

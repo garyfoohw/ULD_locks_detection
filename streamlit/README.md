@@ -86,6 +86,13 @@ This project is designed for the detection of raised locks with ULD and may not 
 
 <sup><sup>Created with [ASCIIFlow](https://asciiflow.com/)</sub></sup>
 
+## A word on the Background Removal layer
+
+The background removal layer is not part of Ultralytics YOLOv8 package.
+It is a custom written function mainly using OpenCV functions.
+The main tasks are to scale the contour coodinates properly from its centroid `cv2.moments`,
+create the image mask using `cv2.drawContours`, and change the colour in regions to black or white using `cv2.bitwise_and`.
+
 ## Adapted from
 
 https://github.com/josebenitezg/yolov8-streamlit-app
