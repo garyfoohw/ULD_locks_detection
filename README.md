@@ -20,6 +20,16 @@ The use of streamlit platform allows for convenient adjustment of inference conf
 
 The YOLOv8 models used within this package have been pre-trained separately. The training used pre-trained YOLOv8n models.
 
+## Static demonstration
+
+1. Here we demonstrate using Object Detection in Stage 1 to locate the 2 raised locks. The final out shows the 2 locks detected in the bounding boxes drawn.
+
+**Raw Image**
+![#1 Raw Image](https://user-images.githubusercontent.com/86142858/220334321-8b44ae00-b8cc-4a4a-8b43-a58c18606b2c.jpg)
+
+**Processed Output**
+![#1 Processed Output](https://user-images.githubusercontent.com/86142858/220334804-57dda9e1-5087-498d-8b10-3667c69a47d4.png)
+
 ## Getting started
 
 The repository is split into 2 folders. 1 for the training algorithm 1 for the deployment.
