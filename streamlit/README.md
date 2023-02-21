@@ -5,8 +5,9 @@
 ## Deploying the Streamlit app.
 
 There are 2 ways to deploy the app.
-- Locally on your machine
-- On Google Colab (with access via Internet)
+
+-   Locally on your machine
+-   On Google Colab (with access via Internet)
 
 ## Dependencies
 
@@ -18,6 +19,7 @@ There are 2 ways to deploy the app.
 -   OpenCV
 
 ## Getting started
+
 ### Getting started on your local machine
 
 To get started, you need to clone the repository and install the dependencies.
@@ -63,6 +65,23 @@ You can customize the parameters of the object detection process by modifying th
 ## Limitations
 
 This project is designed for the detection of raised locks with ULD and may not work well for detecting other objects. Also, the performance of the app may vary depending on the quality and resolution of the input image. Speed of device may also affect the usability due to inference time.
+
+## Technical details of program flow
+
+          Object     ┌────────────────────────┐
+          Detection  │ Stage 1 (Detect ULD)   ├─────────────────────────┐
+          ┌─────────►│ YOLOv8                 │                         ▼
+          │          │ Obj Detection          │                      ┌────────────────┐
+          │          └────────────────────────┘                      │  Stage 2       │  ┌─────────┐
+
+┌─────────┴─┐ │ YOLOv8 ├─►│ Output │
+│ Raw Image │ │ Obj Detection │ └─────────┘
+└─────────┬─┘ └────────────────┘
+│ ┌────────────────────────┐ ┌────────────┐ ▲
+│ │ Stage 1 (Detect ULD) │ │ Background │ │
+└─────────►│ YOLOv8 ├────►│ Removal ├──────┘
+Instance │ Instance Segmentation │ │ │
+Segmentatio└────────────────────────┘ └────────────┘
 
 ## Adapted from
 
