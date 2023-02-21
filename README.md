@@ -20,6 +20,8 @@ The use of streamlit platform allows for convenient adjustment of inference conf
 
 The YOLOv8 models used within this package have been pre-trained separately. The training used pre-trained YOLOv8n models.
 
+The application also works fine if the image contains multiple ULD (although severly occluded ones may have trouble being detected).
+
 ## Static demonstration
 
 1. Here we demonstrate using <ins>Object Detection</ins> in Stage 1 to locate the 2 raised locks. The output shows the 2 locks detected in the bounding boxes drawn.
@@ -31,6 +33,8 @@ The YOLOv8 models used within this package have been pre-trained separately. The
 ![#1 Processed Output](https://user-images.githubusercontent.com/86142858/220334804-57dda9e1-5087-498d-8b10-3667c69a47d4.png)
 
 2. Next we demonstrate using <ins>Instance Segmentation</ins> in Stage 1 to locate locks. There isn't any raised locks in this sample, so the algorithm detects none, and output an error in red.
+
+You may also have observed that the contour used for cropping is non-rectangular. This is the work of the background removal layer which crops the image with a contour similar to the container of interest.
 
 **Raw Image**<br>
 ![#2 Raw Image](https://user-images.githubusercontent.com/86142858/220335210-1211f3c4-8868-43f7-9cbb-06b41fe9053b.png)
