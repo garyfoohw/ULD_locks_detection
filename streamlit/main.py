@@ -163,9 +163,9 @@ if __name__ == '__main__':
 
                     #show image to screen
                     if detect:
-                        st.image(os.path.join("runs","detect",stage2_dir,uld_with_lock_fn),output_format ="PNG")
+                        st.image(os.path.join("runs","detect",stage2_dir,uld_with_lock_fn),output_format ="JPEG")
                     else:
-                        st.image(os.path.join("runs","detect","predict",uld_with_lock_fn),output_format ="PNG")
+                        st.image(os.path.join("runs","detect","predict",uld_with_lock_fn),output_format ="JPEG")
                     
                     #draw horizontal rule
                     st.write("<hr>",unsafe_allow_html=True)
